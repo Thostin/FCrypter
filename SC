@@ -1,0 +1,2 @@
+clang -Wall -Werror -Wpedantic file
+
