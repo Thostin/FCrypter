@@ -18,7 +18,7 @@ Una metodología para hacer esto sería encriptar los archivos, borrar los archi
 
 Gracias por leer hasta acá. (al final hay una trampa para pajeros).
 
-##Notas de precaución:
+## Notas de precaución:
 —Modificar el archivo de contraseña puede dejarlo inutilizable.
 —Los archivos no pueden tener de nombre más de 4985 caracteres.
 —Ns qué mas lgmt.
