@@ -29,7 +29,8 @@ int CryptMenu(void){
 
   fflush(flow);
   fclose(flow);
-
+  
+  system(PAUSE);
   return 0;
 }
 
@@ -42,6 +43,8 @@ int UncryptMenu(void) {
   //strcat(uncrypt_name, ".uncrypt");
   FUncrypterAlgorithm(uncrypt_name);
   free(uncrypt_name);
+
+  system(PAUSE);
   return 0;
 }
 
@@ -76,8 +79,10 @@ int PrincipalMenu(void){
 
       default :
         ++tries;
-        if(tries == 3)
+        if(tries == 3){
+	  printf("Muy boludo sos ya sos\n");
           exit(POR_BOLUDO);
+	}
 
         while(getc(stdin) != '\n'); // delete all after the ooption letter
         system(CLEAR);

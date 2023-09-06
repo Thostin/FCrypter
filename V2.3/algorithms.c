@@ -75,7 +75,6 @@ int FCrypterAlgorithm(FILE *flow, char *crypt_name)
   fflush(CryptedFile);
   fclose(CryptedFile);
 
-  system(PAUSE);
   return 0;
 }
 
@@ -146,6 +145,5 @@ int FUncrypterAlgorithm(char *name){
   fflush(to_uncrypt);
   fclose(to_uncrypt);
 
-  system(PAUSE);
   return 0;
 }
