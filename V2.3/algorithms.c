@@ -75,6 +75,7 @@ int FCrypterAlgorithm(FILE *flow, char *crypt_name)
   fflush(CryptedFile);
   fclose(CryptedFile);
 
+  system(PAUSE);
   return 0;
 }
 
@@ -85,9 +86,12 @@ int FUncrypterAlgorithm(char *name){
     exit(OPEN_FILE_ERROR);
   }
 
-  char *uncrypt_name = (char *)malloc(strlen(name) + 8);
+  char *uncrypt_name = (char *)malloc(strlen(name));
   strcpy(uncrypt_name, name);
-  strcat(uncrypt_name, ".uncrypt");
+  int k_len_p = strlen(name) - 1;
+
+  for(int i = k_len_p; i > k_len_p - 6; i--)
+    uncrypt_name[i] = '\0';
 
   FILE *dcrypt = fopen(uncrypt_name, "r");
   if(NULL != dcrypt){
@@ -142,5 +146,6 @@ int FUncrypterAlgorithm(char *name){
   fflush(to_uncrypt);
   fclose(to_uncrypt);
 
+  system(PAUSE);
   return 0;
 }
