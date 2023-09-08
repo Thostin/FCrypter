@@ -1,3 +1,0 @@
-clang -Wall -Werror -Wpedantic <file>
-x86_64-w64-mingw32-gcc -Wall -Werror -Wpedantic main.c -o FeraSuruTabiVokikuNaru.exe
-
