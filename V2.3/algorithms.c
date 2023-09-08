@@ -81,7 +81,7 @@ int FCrypterAlgorithm(FILE *flow, char *crypt_name)
 int FUncrypterAlgorithm(char *name){
   FILE *to_uncrypt = fopen(name, "rb");
   if(NULL == to_uncrypt){
-    perror("Could not open the file to uncrypt!\n");
+    perror("Could not open the file to decrypt!\n");
     exit(OPEN_FILE_ERROR);
   }
 
@@ -118,7 +118,7 @@ int FUncrypterAlgorithm(char *name){
   DataSection *Data_buffer = CreateDataSection();
 
   // status tells if there's more file or not
-  printf("Uncrypting... ");
+  printf("Decrypting... ");
   int status = 1;
   int readed;
   while(status)

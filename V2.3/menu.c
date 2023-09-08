@@ -37,7 +37,7 @@ int CryptMenu(void){
 int UncryptMenu(void) {
   //printf("This option is not suported yet! (it will be tomorrow)\n");
   char *uncrypt_name = (char *)malloc(MAX_NAME_LEN);
-  printf("Selecciona el archivo a desencriptar: ");
+  printf("Select the file to decrypt: ");
   scanf(" %s", uncrypt_name);
 
   //strcat(uncrypt_name, ".uncrypt");
@@ -80,7 +80,7 @@ int PrincipalMenu(void){
       default :
         ++tries;
         if(tries == 3){
-	  printf("Muy boludo sos ya sos\n");
+	  printf("Dm boludo sos ya sos chememby\n");
           exit(POR_BOLUDO);
 	}
 
