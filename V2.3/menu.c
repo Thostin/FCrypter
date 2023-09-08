@@ -5,11 +5,11 @@
 #include "algorithms.c"
 
 int CryptMenu(void){
-  printf("Write the name of the file to crypt: ");
+  printf("Select the file to encrypt:\n");
   char *file_name = (char *)malloc(MAX_NAME_LEN);
 
   scanf(" %s", file_name);
-  printf("File to crypt: %s\n", file_name);
+  printf("File to encrypt: %s\n", file_name);
 
   FILE *flow = fopen(file_name, "rb");
   if (NULL == flow) {
@@ -37,7 +37,7 @@ int CryptMenu(void){
 int UncryptMenu(void) {
   //printf("This option is not suported yet! (it will be tomorrow)\n");
   char *uncrypt_name = (char *)malloc(MAX_NAME_LEN);
-  printf("Write the name of the file to uncrypt: ");
+  printf("Selecciona el archivo a desencriptar: ");
   scanf(" %s", uncrypt_name);
 
   //strcat(uncrypt_name, ".uncrypt");
@@ -52,11 +52,11 @@ int PrincipalMenu(void){
   printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
   printf("|          FCrypter       |\n");
   printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-  printf("               Poor crypter\n");
+  printf("             Poor encrypter\n");
 
   printf("You have three attemps\nSelect options:\n");
-  printf("1. Crypt\n");
-  printf("2. Uncrypt\n");
+  printf("1. Encrypt\n");
+  printf("2. Decrypt\n");
   printf("3. Quit\n");
 
   printf("> ");

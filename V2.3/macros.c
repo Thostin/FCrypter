@@ -13,12 +13,12 @@
 #define PasswordLen(A) A->PasswordMax-A->PasswordMin+1
 // Windows commands
 
-#define CLEAR "cls"
-#define PAUSE "pause"
+// #define CLEAR "cls"
+// #define PAUSE "pause"
 
 
 // Linux commands
 
-// #define CLEAR "clear"
-// #define PAUSE "cd ."
+#define CLEAR "clear"
+#define PAUSE "cd ."
 
